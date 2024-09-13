@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Signup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: white; /* Changed to white */
+        }
+
+        .container {
+            width: 900px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo-container {
+            margin-bottom: 20px;
+        }
+
+        .logo-container img {
+            width: 150px; /* Adjust the size as needed */
+            height: auto;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 60px 40px;
+            width: 100%;
+            display: flex;
+            flex-direction: column; /* Align content in a column */
+            align-items: center;    /* Center horizontally */
+            justify-content: center; /* Center vertically */
+        }
+
+        .form-section {
+            width: 100%; /* Ensuring form-section takes full width for centering */
+            max-width: 400px; /* Optional: limit the width */
+            text-align: center; /* Center the text content */
+        }
+
+        .form-section h1 {
+            color: #3b00b8;
+            margin-bottom: 40px;
+        }
+
+        .form-section input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        .form-section button {
+            width: 100%;
+            padding: 12px;
+            background-color: #ff00ff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-section button:hover {
+            background-color: #d400d4;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="logo-container">
+        <img src="images/logo.png" alt="Logo"> <!-- Add the path to the logo file here -->
+    </div>
+    <div class="form-container">
+        <div class="form-section">
+            <h1>Hello, Welcome!</h1>
+            <form action="login.php" method="POST">
+                <input type="text" name="username" placeholder="Username" required><br>
+                <input type="password" name="password" placeholder="Password" required><br>
+                <button type="submit" name="login">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
